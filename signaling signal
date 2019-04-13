@@ -1,0 +1,10 @@
+local http = game:GetService('HttpService')
+local Data = {
+["content"] = "New game found! Game Link https://www.roblox.com/games/" ..game.PlaceId,
+["webhook"] = 'YOUR WEBHOOK'
+-- Credit to Skit/Mr.Skit for orignal source. This is a more secure/faster version-- Credit to Skit/Mr.Skit for orignal source. This is a more secure/faster version.
+}
+Data = http:JSONEncode(Data)
+
+http:PostAsync('https://perryhaxz.moe/discord_gateway.php', Data)
+-- syntax highlighter by josh @v3rmillion.net
